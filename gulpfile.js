@@ -61,7 +61,7 @@ gulp.task('scss', function () {
 gulp.task('templates', function () {
     var YOUR_LOCALS = {};
 
-    gulp.src('app/jade/*.jade')
+    gulp.src(['app/jade/*.jade', '!app/jade/_*.jade'])
         .pipe(jade({
             locals: YOUR_LOCALS
         }))
