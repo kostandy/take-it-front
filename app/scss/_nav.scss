@@ -1,0 +1,45 @@
+header {
+    .nav-menu {
+        top: 100px !important;
+        background-color: $yellow-color !important;
+        .menu-head {
+            img {
+                padding: 5%;
+                margin-top: -50px;
+            }
+            width: 90%;
+            margin-left: 10%;
+            ul {
+                li {
+                    &:first-child {
+                        &:focus {
+                            background-color: $active-yellow;
+                        }
+                        a:not(.dropdown-toggle) {
+                            color: $text-grey-color !important;
+                        }
+                    }
+                    a {
+                        color: $white-color !important;
+                        text-decoration: none;
+                        border-style: solid;
+                        border-width: 0px 0px 1px 0px;
+                        transition: all .2s ease-in;
+                        &:hover {
+                            background-color: $active-yellow !important;
+                            color: green;
+                            border-style: solid;
+                            border-width: 0px 0px 1px 0px;
+                        }
+                    }
+                }
+                .open {
+                    &>a:hover,
+                    &>a:focus {
+                        background-color: $active-yellow !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,1 +1,6 @@
-node_modules/*
+node_modules/
+.idea/
+**/.vscode/
+app/img/
+app/jade.1/
+app/scss.1/

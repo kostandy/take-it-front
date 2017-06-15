@@ -1,0 +1,13 @@
+{
+  "name": "School",
+  "description": "Take it easy",
+  "main": "sctipts.js",
+  "authors": [
+    "serbernar"
+  ],
+  "license": "DWTFU",
+  "dependencies": {
+    "css-reset": "2.5.1",
+    "font-awesome": "^4.7.0"
+  }
+}
