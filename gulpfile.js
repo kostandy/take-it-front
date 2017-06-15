@@ -35,7 +35,7 @@ gulp.task('js', ['common-js'], function () {
         .pipe(uglify()) // Минимизировать весь js (на выбор)
         .pipe(gulp.dest('app/js'))
         .pipe(gulp.dest('../static/js'))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('browser-sync', function () {
@@ -49,13 +49,13 @@ gulp.task('browser-sync', function () {
 });
 gulp.task('scss', function () {
     return gulp.src('app/scss/**/*.scss')
-        .pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
-        .pipe(rename({suffix: '.min', prefix: ''}))
+        .pipe(sass({ outputStyle: 'expand' }).on("error", notify.onError()))
+        .pipe(rename({ suffix: '.min', prefix: '' }))
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(cleanCSS()) // Опционально, закомментировать при отладке
         .pipe(gulp.dest('app/css'))
         .pipe(gulp.dest('../static/css'))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('templates', function () {
@@ -66,7 +66,7 @@ gulp.task('templates', function () {
             locals: YOUR_LOCALS
         }))
         .pipe(gulp.dest('app'))
-        .pipe(browserSync.reload({stream: true}));
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 
