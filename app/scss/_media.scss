@@ -57,6 +57,8 @@
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
         border-color: transparent !important;
+        border-left: none;
+        border-right: none;
     }
 }
 
@@ -71,6 +73,7 @@
     header {
         .nav-menu {
             background-color: transparent !important;
+            border: none;
             .menu-head {
                 border-color: transparent !important;
                 a.navbar-brand {
@@ -102,6 +105,7 @@
     }
     header {
         .nav-menu {
+            border: none;
             background-color: transparent !important;
             .menu-head {
                 border-color: none !important;

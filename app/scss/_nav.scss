@@ -2,6 +2,9 @@ header {
     .nav-menu {
         top: 100px !important;
         background-color: $yellow-color !important;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
         .menu-head {
             img {
                 padding: 5%;
