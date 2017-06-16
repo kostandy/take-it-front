@@ -25,26 +25,94 @@
                             input(name="city" type="hidden" value="kyiv")
                             input(name="promo" type="text" placeholder="Промо-код (необязательно)")
                             input(type="submit" value="Оставить заявку")
-                </form>
+                
     section#second
         .grid
-            .col.col--6-of-12.col--centered.margin-top20
-                .box
+            .col.col--11-of-12.col--centered.margin-top20.margin-bottom30
+                h2 Посмотрите, чем мы будем заниматься:
         .grid
-            //- (.col.col--6-of-12>.box>img+h3{Super}+.info)*6
+            .col.col--6-of-12
+                .lessons-info
+                    img(src="img/icons/base.png", alt="")
+                    .info-header Базовые знания
+                    .info-text Наши преподаватели помогут изучить английский даже тем, кто пропустил школьную программу. Все это в уютной и комфортной обстановке.
+            .col.col--6-of-12
+                .lessons-info
+                    img(src="img/icons/read.png", alt="")
+                    .info-header Чтение
+                    .info-text Вместе с учителем вы будете читать оригинальные английские тексты и научитесь понимать новости со всего мира!
+            .col.col--6-of-12
+                .lessons-info
+                    img(src="img/icons/write.png", alt="")
+                    .info-header Письмо
+                    .info-text После наших занятий вы сможете быстро и без ошибок написать письмо другу или зарубежному партнеру.
+            .col.col--6-of-12
+                .lessons-info
+                    img(src="img/icons/speak.png", alt="")
+                    .info-header Речь
+                    .info-text Уже после пятого занятия вы сможете рассказать нам по английски о своих политических или религиозных взглядах.
+            .col.col--6-of-12
+                .lessons-info
+                    img(src="img/icons/listen.png", alt="")
+                    .info-header Аудирование
+                    .info-text Восприятие и понимание иностранной речи на слух — едва ли не самая главная причина, почему мы учим язык.
+            .col.col--6-of-12
+                .lessons-info
+                    img(src="img/icons/dict.png", alt="")
+                    .info-header Словарь
+                    .info-text Подняться на один уровень с носителем языка намного проще, чем вы думали — нужно только довериться профессионалам! Don't worry about your English — 
+                        strong TAKE IT EASY!
     section#third
         .grid
-           .col.col--6-of-12.col--centered.margin-top20
-                .box
+           .col.col--11-of-12.col--centered.margin-top20.margin-bottom30
+                h2 Вашему выбору предоставляется 3 основных вида занятий:
         .grid
             .col.col--4-of-12
-                .box
+                .lesson-wrap
+                    h4 Групповые занятия
+                    ul
+                        li Забудьте о заучивании слов и правил. Весь материал усваивается естественно, во время разговорных упражнений.
+                        li 25 уроков — именно столько вам понадобится, чтобы в совершенстве овладеть английским даже с нуля.
+                        li Дружеская и комфортная атмосфера, культурный и образованный преподаватель — залог приятного и эффективного обучения в школе TAKE IT EASY.
             .col.col--4-of-12
-                .box
+                .lesson-wrap
+                    h4 Индивидуальные занятия
+                    ul
+                        li Персональное внимание и подстраивание методики именно для Вас.
+                        li Подготовка к школьным, специализированным или международным экзаменам. Наши преподаватели — профессионалы в широчайшем спектре.
+                        li Гибкий график занятий. Составляется исключительно из Ваших пожеланий.
             .col.col--4-of-12
-                .box
-        .grid
-            .col.col--6-of-12
-                .box
-            .col.col--6-of-12
-                .box
+                .lesson-wrap
+                    h4 Корпоративные занятия
+                    ul
+                        li Коммерческое предложение для англоизации Вашего офиса.
+                        li Занятия "In centre" — мы сами приедем к Вам в офис во время обеденного перерыва, или в любое удобное для Вас время.
+                        li Экстраординарный английский: для бизнес-презентаций, переговоров, подачи резюме и т.п.
+        .grid            
+            .col.col--5-of-12.col--push-1-of-12
+                h2 Остались или появились вопросы? Задавайте!
+                .col.col--1-of-4
+                    a(href='https://www.facebook.com/takeiteasyua/')
+                        img(src='img/icons/fb_big.png')
+                .col.col--1-of-4
+                    a(href='https://vk.com/takeiteasyua')
+                        img(src='img/icons/vk_big.png')
+            .col.col--5-of-12
+                .form-clean
+                        form(class="form-action top-form" id="RequestAjaxFormSecond" action="" method="post")
+                            input(name="csrfmiddlewaretoken" type="hidden" value="BiGRCNJuA0pVL8KLJ9eZrbYtFAvVfamd4t1NG9g9Xw9CvdjShoTsc3UnWRuGiY0c")
+                            .form-title
+                                span Отправьте заявку, и наши менеджеры свяжутся с вами в течении ближайшего времени для уточнения подробностей.
+                                h4 Заявка на 
+                                    span.action-color бесплатную 
+                                    консультацию
+                                    
+                            input(name="name" type="text" placeholder="Имя" required="")
+                            input(name="phone" type="text" placeholder="Телефон" required="")
+                            input(name="email" type="email" placeholder="Адрес электронной почты" required="")
+                            input(name="lang" type="hidden" value="ru")
+                            input(name="city" type="hidden" value="kyiv")
+                            input(name="promo" type="text" placeholder="Промо-код (необязательно)")
+                            input(type="submit" value="Оставить заявку")
+                
+

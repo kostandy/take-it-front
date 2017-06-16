@@ -3,8 +3,10 @@
 @import 'nav';
 @import 'content';
 @import 'footer';
-@include attr-x('margin-top', 6, 10, 'px');
-@include attr-x('margin-left', 6, 5, 'px');
+@include attr-x('margin-top', 10, 5, 'px');
+@include attr-x('margin-bottom', 10, 5, 'px');
+@include attr-x('margin-left', 10, 5, 'px');
+@include attr-x('margin-right', 10, 5, 'px');
 
 // always to end add media
 @import 'media';
