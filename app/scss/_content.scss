@@ -39,7 +39,7 @@
             .lessons-info {
                 margin-bottom: 20px;
                 text-align: center;
-                img{
+                img {
                     width: 107px;
                     height: 107px;
                     margin-bottom: 5px;
@@ -61,7 +61,7 @@
                 background-color: #fff;
                 -webkit-box-shadow: 0 0 5px 1px #000;
                 box-shadow: 0 1px 5px 1px #e6e2e2;
-                margin-top: 10px;                
+                margin-top: 10px;
                 letter-spacing: .3px;
                 padding: 20px;
                 min-height: 350px;
@@ -82,60 +82,122 @@
                 }
             }
         }
-    }
-    .form-clean {
-        text-align: center;
-        letter-spacing: .3px;
-        padding: 20px 5px;
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
-        form {
-            -webkit-border-radius: 5px;
-            border-radius: 5px;
-            background-color: #fff;
-            -webkit-box-shadow: 0 0 5px 1px #000;
-            box-shadow: 0 1px 5px 1px #e6e2e2;
-            .form-title {
-                padding-top: 10px;
-            }
-            input {
-                max-width: 350px;
+        &#contacts {
+            .contact-block {
+                text-align: center;
                 display: inline-block;
-                vertical-align: middle;
-                user-select: none;
-                outline: none;
-                &:not(:last-child) {
-                    white-space: nowrap;
-                    background-color: rgba(255, 255, 255, 1);
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    border: 0px solid rgba(47, 46, 46, 1);
-                    color: #2F2E2E;
-                    margin: 0 0 5px;
-                    width: 90%;
-                    border-radius: 1px;
-                    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.6);
-                    padding: 5px;
+                padding: 0 15px;
+                height: 60px;
+                font-size: 16px;
+                img {
+                    float: left;
+                    margin: 5px 0px 9px -35px;
                 }
-                &[type='submit'] {
-                    font-size: 14px;
-                    font-weight: 600;
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    background-color: $yellow-color;
-                    background: linear-gradient(to bottom, #ffc533 0, #fb652b 100%);
-                    border-radius: 4px;
-                    border: 1px solid transparent;
-                    height: 40px;
-                    color: $white-color;
-                    &:hover,
-                     :active,
-                     :focus {
-                        color: #212121;
-                        background: linear-gradient(to bottom, #d2ff52 0, #9bcb07 100%);
-                    }
+                .cont {
+                    letter-spacing: 0.6px;
+                }
+                span {
+                    font-size: 12px;
                 }
             }
+            .teachers-wrap {
+                text-align: center;
+                margin-top: 20px;
+                margin-left: 2.5%;
+                width: 95%;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                background-color: #fff;
+                -webkit-box-shadow: 0 0 5px 1px #000;
+                box-shadow: 0 1px 5px 1px #e6e2e2;
+                padding: 5px;
+                padding-bottom: 30px;
+                margin-bottom: 20px;
+                img {
+                    border-radius: 50%;
+                }
+                .name {
+                    color: $light-black;
+                    font: normal normal normal 17px/1.4em 'open sans', sans-serif;
+                    font-size: 30px;
+                    line-height: normal;
+                }
+                h2 {
+                    color: $light-black;
+                    font: normal normal normal 17px/1.4em 'open sans', sans-serif;
+                    font-size: 30px;
+                    line-height: normal;
+                    margin-bottom: 30px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.form-clean {
+    text-align: center;
+    letter-spacing: .3px;
+    padding: 20px 5px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    form {
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 0 5px 1px #000;
+        box-shadow: 0 1px 5px 1px #e6e2e2;
+        .form-title {
+            padding-top: 10px;
+            .hell{
+                margin-bottom: 10px;
+            }
+        }
+        input,
+        textarea {
+            max-width: 350px;
+            display: inline-block;
+            vertical-align: middle;
+            user-select: none;
+            outline: none;
+            &:not(:last-child) {
+                white-space: nowrap;
+                background-color: rgba(255, 255, 255, 1);
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                border: 0px solid rgba(47, 46, 46, 1);
+                color: #2F2E2E;
+                margin: 0 0 5px;
+                width: 90%;
+                border-radius: 1px;
+                box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.6);
+                padding: 5px;
+            }
+            &[type='submit'] {
+                font-size: 14px;
+                font-weight: 600;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: $yellow-color;
+                background: linear-gradient(to bottom, #ffc533 0, #fb652b 100%);
+                border-radius: 4px;
+                border: 1px solid transparent;
+                height: 40px;
+                color: $white-color;
+                &:hover,
+                 :active,
+                 :focus {
+                    color: #212121;
+                    background: linear-gradient(to bottom, #d2ff52 0, #9bcb07 100%);
+                }
+            }
+        }
+        textarea {
+            word-wrap: break-word;
+            word-break: break-all;
+            overflow: hidden;
+            height: 120px;
+            resize: none;
         }
     }
 }

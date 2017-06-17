@@ -1,2 +1,87 @@
 .content-wrapper
-    section
+    section#contacts
+        .wrap-section
+            .grid
+                .col.col--1-of-1.margin-left20
+                    h2 Контакты
+                    h4 Если у вас появился вопрос или пожелание, то смело звоните нам, и мы с радостью поможем найти ответы на любые Ваши вопросы. Мы работаем с 9 утра до 8 вечера по киевскому времени.
+            .grid
+                .col.col--1-of-1.margin-left20
+                    h2 Звоните и пишите
+                    .contacts
+                        .col.col--1-of-5
+                            .contact-block
+                                img(src="/img/icons/contact_phone.png", alt="")
+                                .cont +380968764671
+                                span Или отправьте заявку
+                        .col.col--1-of-5
+                            .contact-block
+                                img(src="/img/icons/contact_mail.png", alt="")
+                                .cont info@take-it-easy.com.ua
+                                span электронная почта
+                        .col.col--1-of-5
+                            .contact-block
+                                img(src="/img/icons/contact_skype.png", alt="")
+                                .cont takeiteasy_ua
+                                span Или отправьте заявку
+                        .col.col--1-of-5
+                            .contact-block
+                                img(src="/img/icons/contact_working.png", alt="")
+                                .cont с 9:00 до 20:00
+                                span Или отправьте заявку
+                        .col.col--1-of-5
+                            .contact-block
+                                img(src="/img/icons/map.png", alt="")
+                                .cont ул. Белорусская, 30
+                                span Офис в Киеве
+
+            .grid
+                .teachers-wrap
+                    h2 О вас заботятся
+                    .col.col--1-of-4
+                        img(src='img/teachers/lyuda.png')
+                        .name Люда
+                    .col.col--1-of-4
+                        img(src='img/teachers/lyuda.png')
+                        .name Люда
+                    .col.col--1-of-4
+                        img(src='img/teachers/lyuda.png')
+                        .name Люда
+                    .col.col--1-of-4
+                        img(src='img/teachers/lyuda.png')
+                        .name Люда
+            .grid
+                .teachers-wrap
+                    .col.col--1-of-2
+                        .form-clean
+                            form(class="form-action top-form" id="MessageAjaxForm" action="" method="post")
+                                input(name="csrfmiddlewaretoken" type="hidden" value="BiGRCNJuA0pVL8KLJ9eZrbYtFAvVfamd4t1NG9g9Xw9CvdjShoTsc3UnWRuGiY0c")
+                                .form-title
+                                    h4 Ваши предложения
+                                    .hell Мы очень рады вашим письмам, пишите любые идеи:
+                                        
+                                input(name="name" type="text" placeholder="Имя" required="")
+                                input(name="email" type="email" placeholder="Адрес электронной почты" required="")
+                                input(name="lang" type="hidden" value="ru")
+                                input(name="city" type="hidden" value="kyiv")
+                                textarea(name="message" placeholder="Сообщение" rows="4" cols="5" wrap="hard" maxlength="300")
+                                input(type="submit" value="Отправить")
+                
+                    .col.col--1-of-2
+                        .form-clean
+                            form(class="form-action top-form" id="RequestAjaxFormContact" action="" method="post")
+                                input(name="csrfmiddlewaretoken" type="hidden" value="BiGRCNJuA0pVL8KLJ9eZrbYtFAvVfamd4t1NG9g9Xw9CvdjShoTsc3UnWRuGiY0c")
+                                .form-title
+                                    h4 Заявка на 
+                                        span.action-color бесплатную 
+                                        консультацию
+                                        
+                                input(name="name" type="text" placeholder="Имя" required="")
+                                input(name="phone" type="text" placeholder="Телефон" required="")
+                                input(name="email" type="email" placeholder="Адрес электронной почты" required="")
+                                input(name="lang" type="hidden" value="ru")
+                                input(name="city" type="hidden" value="kyiv")
+                                input(name="promo" type="text" placeholder="Промо-код (необязательно)")
+                                input(type="submit" value="Оставить заявку")
+                
+
