@@ -181,17 +181,17 @@
                      :focus {
                         color: #212121;
                         background: linear-gradient(to bottom, #d2ff52 0, #9bcb07 100%);
-                    }                    
+                    }
                 }
                 span {
-                        margin-top: 0;
-                        text-align: right;
-                        float: right;
-                        font-size: 11px;
-                        padding-left: -15px;
-                    }
+                    margin-top: 0;
+                    text-align: right;
+                    float: right;
+                    font-size: 11px;
+                    padding-left: -15px;
+                }
             }
-            .wrap-shad{
+            .wrap-shad {
                 text-align: center;
                 min-height: 150px;
                 width: 80%;
@@ -204,11 +204,11 @@
                 letter-spacing: .3px;
                 padding: 10px;
                 margin-bottom: 20px;
-                &:first-child{
+                &:first-child {
                     margin-left: 10%;
                 }
             }
-            .wrap-shad1{
+            .wrap-shad1 {
                 text-align: center;
                 min-height: 250px;
                 -webkit-border-radius: 5px;
@@ -220,6 +220,92 @@
                 letter-spacing: .3px;
                 padding: 10px;
                 margin-bottom: 20px;
+            }
+        }
+        &#process {
+            .wrap-sec {
+                width: 95%;
+                margin: 0 auto;
+                .wrap-shad1 {
+                    text-align: center;
+                    min-height: 270px;
+                    -webkit-border-radius: 5px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    -webkit-box-shadow: 0 0 5px 1px #000;
+                    box-shadow: 0 1px 5px 1px #e6e2e2;
+                    margin-top: 20px;
+                    letter-spacing: .3px;
+                    padding: 10px;
+                    margin-bottom: 20px;
+                    ul.processing {
+                        text-align: left;
+                        font-size: 14px;
+                        padding-left: 20px;
+                        li {
+                            &.ex {
+                                background: url(../img/icons/ex.png) no-repeat left top;
+                            }
+                            &.of {
+                                background: url(../img/icons/map.png) no-repeat left top;
+                            }
+                            &.ti {
+                                background: url(../img/icons/clock.png) no-repeat left top;
+                            }
+                            &.st {
+                                background: url(../img/icons/target.png) no-repeat left top;
+                                margin-bottom: 10px;
+                            }
+                            height: 35px;
+                            list-style: none;
+                            padding-right: 50px;
+                            padding-left: 40px;
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+                .prop-num {
+                    position: relative;
+                    width: 100%;
+                    img {
+                        padding-right: 50px;
+                    }
+                    h4 {
+                        position: absolute;
+                        height: 100%;
+                        top: 0;
+                        left: 47px;
+                    }
+                }
+                .prop-wrapp{
+                    -webkit-border-radius: 5px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    -webkit-box-shadow: 0 0 5px 1px #000;
+                    box-shadow: 0 1px 5px 1px #e6e2e2;
+                    margin-top: 5px;
+                    letter-spacing: .3px;
+                    padding: 10px;
+                    margin-left: 47px;
+                    margin-bottom: 10px;
+                    p{
+                        &:not(:last-child){
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .box-box{
+                     -webkit-border-radius: 5px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    -webkit-box-shadow: 0 0 5px 1px #000;
+                    box-shadow: 0 1px 5px 1px #e6e2e2;
+                    margin-top: 5px;
+                    letter-spacing: .3px;
+                    padding: 10px;
+                    margin-left: 47px;
+                    margin-bottom: 10px;
+                }
             }
         }
     }
