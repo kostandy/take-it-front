@@ -1,30 +1,118 @@
 .content-wrapper
-    section
+    section#pricing
         .wrap-section
             .grid
                 .col.col--1-of-3
-                    .box
+                    .lesson-wrap
+                        h4 Групповые занятия
+                        ul
+                            li Забудьте о заучивании слов и правил. Весь материал усваивается естественно, во время разговорных упражнений.
+                            li 25 уроков — именно столько вам понадобится, что бы в совершенстве овладеть английским даже с нуля.
+                            li Дружеская и комфортная атмосфера, культурный и образованный преподаватель — залог приятного и эффективного обучения в школе TAKE IT EASY.
+                        .price_action
+                            a(href='#lesson-request') 100 грн 
+                        span *стоимость указана за одно занятие.
                 .col.col--1-of-3
-                    .box
+                    .lesson-wrap 
+                        h4 Групповые онлайн-занятия
+                        ul
+                            li Преподаватель доступен для Вас в любое время и в любом месте. Обретайте знания с комфортом.
+                            li Подготовка к школьным, специализированным или международным экзаменам. Наши преподаватели — профессионалы в широчайшем спектре.
+                            li Эффективная обратная связь между преподавателем и учащимся. Комфортные условия для творческого самовыражения учащегося.
+                        .price_action
+                            a(href='#lesson-request') 100 грн 
+                        span *стоимость указана за одно занятие.
                 .col.col--1-of-3
-                    .box
+                    .lesson-wrap
+                        h4 Индивидуальные занятия
+                        ul
+                            li Персональное внимание и подстраивание методики именно для Вас.
+                            li Независимость от географического положения обучающегося и образовательного учреждения позволяет не ограничивать себя в образовательных потребностях.
+                            li Гибкий график занятий. Составляется исключительно из Ваших пожеланий.
+                            li Возможность заниматься по скайпу.
+                        .price_action
+                            a(href='#lesson-request') 200 грн 
+                        span *стоимость указана за одно занятие.
                 .col.col--1-of-3
-                    .box
+                    .wrap-shad
+                        h4 Начните без затрат
+                        p Получите массу полезной информации и персональные рекомендации оплатив только первый урок.
                 .col.col--1-of-3
-                    .box
+                    .wrap-shad
+                        h4 Платите частями
+                        p Если нет возможности оплатить весь курс сразу — платите помесячно.
                 .col.col--1-of-3
-                    .box
-                .col.col--1-of-3
-                    .box
-                .col.col--1-of-3
-                    .box
-                .col.col--1-of-3
-                    .box
+                    .wrap-shad
+                        h4 Занимайтесь со скидкой
+                        p Получайте скидку до 40% на покупку занятий после основного курса.
                 .col.col--3-of-3
-                    .box
+                    h2.text-center Мы обеспечиваем лучшие условия для наших клиентов
+                .col.col--1-of-4
+                    .wrap-shad1
+                        img(src='img/icons/lock.png')
+                        h4 Безопасные платежи
+                        p Все наши партнеры защищают свои платежи технологией HTTPS и двухфакторной аутентификацией.
+                .col.col--1-of-4
+                    .wrap-shad1
+                        img(src='img/icons/balance.png')
+                        h4 Прозрачный баланс
+                        p Не берем никаких дополнительных взносов. При подписании договора вы сможете ознакомится со сметой.
+                .col.col--1-of-4
+                    .wrap-shad1
+                        img(src='img/icons/guarant.png')
+                        h4 Гарантии
+                        p Возвращаем деньги по первому требованию и сохраняем баланс при переносе занятий.
+                .col.col--1-of-4
+                    .wrap-shad1
+                        img(src='img/icons/bonus.png' style='margin-top:25px;')
+                        h4 Бонусные уроки
+                        p Приглашайте друзей в нашу школу. За 5 приглашенных друзей, вы получите полностью бесплатный курс для себя.
                 .col.col--1-of-2
-                    .box
+                    .wrap-shad1
+                        h4 Платите удобным способом
+                        .col.col--1-of-3.margin-top20
+                            img(src="img/icons/payment/visa.png", alt="")
+                        .col.col--1-of-3.margin-top20
+                            img(src="img/icons/payment/ym.png", alt="")
+                        .col.col--1-of-3.margin-top20
+                            img(src="img/icons/payment/privat.png", alt="")
+                        .col.col--1-of-3.margin-top20
+                            img(src="img/icons/payment/mc.png", alt="")
+                        .col.col--1-of-3.margin-top20
+                            img(src="img/icons/payment/qiwi.png", alt="")
+                        .col.col--1-of-3.margin-top20
+                            img(src="img/icons/payment/alpha.png", alt="")
+                        .col.col--1-of-3.margin-top20
+                            img(src="img/icons/payment/pp.png", alt="")
+                        .col.col--1-of-3.margin-top20
+                            img(src="img/icons/payment/wm.png", alt="")
+                        .col.col--1-of-3.margin-top20
+                            img(src="img/icons/payment/transfer.png", alt="")
                 .col.col--1-of-2
-                    .box
+                    .form-clean
+                            form(class="form-action top-form" id="RequestAjaxFormContact" action="" method="post")
+                                input(name="csrfmiddlewaretoken" type="hidden" value="BiGRCNJuA0pVL8KLJ9eZrbYtFAvVfamd4t1NG9g9Xw9CvdjShoTsc3UnWRuGiY0c")
+                                .form-title
+                                    h4 Заявка на 
+                                        span.action-color бесплатную 
+                                        консультацию
+                                        
+                                input(name="name" type="text" placeholder="Имя" required="")
+                                input(name="phone" type="text" placeholder="Телефон" required="")
+                                input(name="email" type="email" placeholder="Адрес электронной почты" required="")
+                                input(name="lang" type="hidden" value="ru")
+                                input(name="city" type="hidden" value="kyiv")
+                                input(name="promo" type="text" placeholder="Промо-код (необязательно)")
+                                input(type="submit" value="Оставить заявку")
+                
+
                 .col.col--3-of-3
-                    .box
+                    .wrap-shad1
+                        .col.col--1-of-2
+                            img(src='img/icons/office.png')
+                        .col.col--1-of-2
+                            .corp.text-left.margin-top20
+                                h4 Корпоративное обучение                                
+                                p Вы можете сэкономить, если компания будет оплачивать обучение за вас. 
+                                p Мы подскажем, как организовать корпоративное обучение у себя в компании, напишите нам на 
+                                    a(href='mailto:companies@take-it-easy.com.ua') companies@take-it-easy.com.ua

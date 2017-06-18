@@ -132,6 +132,96 @@
                 }
             }
         }
+        &#pricing {
+            .lesson-wrap {
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                background-color: #fff;
+                -webkit-box-shadow: 0 0 5px 1px #000;
+                box-shadow: 0 1px 5px 1px #e6e2e2;
+                margin-top: 10px;
+                letter-spacing: .3px;
+                padding: 20px;
+                min-height: 400px;
+                margin-bottom: 20px;
+                h4 {
+                    text-align: center;
+                }
+                ul {
+                    margin-top: 20px;
+                    font-size: 12px;
+                    min-height: 300px;
+                    li {
+                        background: url(../img/icons/tick_s.png) no-repeat left top;
+                        list-style: none;
+                        padding-right: 20px;
+                        padding-left: 40px;
+                        margin-bottom: 10px;
+                    }
+                }
+                .price_action {
+                    font-size: 17px;
+                    font-weight: 600;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    background-color: $yellow-color;
+                    background: linear-gradient(to bottom, #ffc533 0, #fb652b 100%);
+                    border-radius: 4px;
+                    border: 1px solid transparent;
+                    height: 40px;
+                    color: $white-color;
+                    text-align: center;
+                    padding: 5px;
+                    a {
+                        color: $white-color;
+                        text-decoration: none;
+                    }
+                    &:hover,
+                     :active,
+                     :focus {
+                        color: #212121;
+                        background: linear-gradient(to bottom, #d2ff52 0, #9bcb07 100%);
+                    }                    
+                }
+                span {
+                        margin-top: 0;
+                        text-align: right;
+                        float: right;
+                        font-size: 11px;
+                        padding-left: -15px;
+                    }
+            }
+            .wrap-shad{
+                text-align: center;
+                min-height: 150px;
+                width: 80%;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                background-color: #fff;
+                -webkit-box-shadow: 0 0 5px 1px #000;
+                box-shadow: 0 1px 5px 1px #e6e2e2;
+                margin-top: 10px;
+                letter-spacing: .3px;
+                padding: 10px;
+                margin-bottom: 20px;
+                &:first-child{
+                    margin-left: 10%;
+                }
+            }
+            .wrap-shad1{
+                text-align: center;
+                min-height: 250px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                background-color: #fff;
+                -webkit-box-shadow: 0 0 5px 1px #000;
+                box-shadow: 0 1px 5px 1px #e6e2e2;
+                margin-top: 10px;
+                letter-spacing: .3px;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 
@@ -149,7 +239,7 @@
         box-shadow: 0 1px 5px 1px #e6e2e2;
         .form-title {
             padding-top: 10px;
-            .hell{
+            .hell {
                 margin-bottom: 10px;
             }
         }

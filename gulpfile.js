@@ -67,6 +67,7 @@ gulp.task('watch', ['templates', 'scss', 'js', 'browser-sync'], function () {
     gulp.watch('app/jade/**/*.jade', ['templates']);
     gulp.watch('app/scss/**/*.scss', ['scss']);
     gulp.watch(['libs/**/*.js', 'app/js/custom.js'], ['js']);
+    gulp.watch('app/*.html', browserSync.reload);
 });
 
 gulp.task('imagemin', function () {
