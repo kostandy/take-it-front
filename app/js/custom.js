@@ -20,3 +20,14 @@ i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
 
 ga('create', 'UA-65978668-1', 'auto');
 ga('send', 'pageview');
+
+$(document).ready(function(){
+
+	  var header = $('header'),
+			      btn    = $('button.toggle-nav');
+
+	  btn.on('click', function(){
+		    header.toggleClass('active');
+	  });
+
+});

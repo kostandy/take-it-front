@@ -1,132 +1,27 @@
-/* =Media Queries
--------------------------------------------------------------- */
-
-// Large Devices, Wide screens
-@media only screen and (max-width: 1200px) {}
-
-// Medium, Desktops
-@media only screen and (max-width: 992px) {
-    .container {
-        width: 100% !important;
-    }
-    header {
-        .nav-menu {
-            .menu-head {
-                margin-left: 0;
-                img {
-                    padding: 10%; // margin-top: 0;
-                }
-            }
-        }
+@media only screen and (max-width:768px){
+    .lesson-wrap{
+        height: 493px;
     }
 }
 
-@media (min-width: 768px) {
-    .navbar-right {
-        float: right!important;
-        margin-right: -40px !important;
+@media screen and (max-width: 600px) {
+    header.active ul.nav li a {
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid #222b2f;
     }
-}
-
-// Small devices
-@media only screen and (max-width: 660px) {
-    header {
-        .nav-menu {
-            background-color: transparent !important;
-            .menu-head {
-                a.navbar-brand {
-                    width: 100px
-                }
-                width: 100%;
-                ul {
-                    background-color: $yellow-color;
-                    width: 50%;
-                    text-align: center;
-                    &:not(.dropdown-toggle) {
-                        margin-left: 20%;
-                    }
-                }
-                button {
-                    &:hover {
-                        background-color: rgba(251, 101, 43, 0.79) !important;
-                    }
-                }
-            }
-        }
+    button.toggle-nav {
+        top: 0;
+        left: 15px;
     }
-    .navbar-default .navbar-collapse,
-    .navbar-default .navbar-form {
-        border-color: transparent !important;
-        border-left: none;
-        border-right: none;
+    header.active button.toggle-nav {
+        top: 305px;
     }
-}
-
-// Tablets
-@media only screen and (max-width: 600px) {}
-
-// Smartphones
-@media only screen and (min-width: 321px) and (max-width:410px) {
-    .navbar {
-        border-bottom: none !important;
+    header ul.nav li {
+        float: none;
+        width: 100%;
     }
-    header {
-        .nav-menu {
-            background-color: transparent !important;
-            border: none;
-            .menu-head {
-                border-color: transparent !important;
-                a.navbar-brand {
-                    width: 100px
-                }
-                width: 100%;
-                ul {
-                    background-color: $yellow-color;
-                    width: 100%;
-                    text-align: center;
-                    &:not(.dropdown-toggle) {
-                        margin-left: 20%;
-                    }
-                }
-                button {
-                    &:hover {
-                        background-color: rgba(251, 101, 43, 0.79) !important;
-                    }
-                }
-            }
-        }
-    }
-}
-
-// Mini Smartphones
-@media only screen and (max-width: 320px) {
-    .navbar {
-        border-bottom: none !important;
-    }
-    header {
-        .nav-menu {
-            border: none;
-            background-color: transparent !important;
-            .menu-head {
-                border-color: none !important;
-                a.navbar-brand {
-                    width: 100px
-                }
-                width: 100%;
-                ul {
-                    background-color: $yellow-color;
-                    width: 100%;
-                    text-align: center;
-                    &:not(.dropdown-toggle) {
-                        margin-left: 20%;
-                    }
-                }
-                button {
-                    &:hover {
-                        background-color: rgba(251, 101, 43, 0.79) !important;
-                    }
-                }
-            }
-        }
+    header ul.nav li a {
+        height: 0;
     }
 }

@@ -1,122 +1,100 @@
-/* A simple, css only, (some-what) responsive menu */
-
+@import url(https://fonts.googleapis.com/css?family=Allan);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
 header {
-    display: inline-block;
-    -webkit-box-shadow: 0 0 70px #fff;
-    -moz-box-shadow: 0 0 70px #fff;
-    box-shadow: 0 0 70px #fff;
-    margin-top: 40px;
-}
-
-.decor {
-    background: #6EAF8D;
-    background: -webkit-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
-    background: -moz-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
-    background: -o-linear-gradient(left, #CDEBDB 50%, #6EAF8D 50%);
-    background: linear-gradient(left, white 50%, #6EAF8D 50%);
-    background-size: 50px 25%;
-    padding: 2px;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-    color: #fff !important;
-    display: block;
-}
-
-ul {
-    list-style: none;
     position: relative;
-    text-align: left;
+    background-color: $yellow-color;    
 }
 
-li {
-    float: left;
-}
-
-
-/* clear'n floats */
-
-ul {
-    &:after {
-        clear: both;
-    }
-    &:before,
-    &:after {
-        content: " ";
-        display: table;
-    }
-}
-
-nav {
-    position: relative;
-    background: $active-yellow;
-    background-image: -webkit-linear-gradient(bottom, $active-yellow 7%, $yellow-color 100%);
-    background-image: -moz-linear-gradient(bottom, $active-yellow 7%, $yellow-color 100%);
-    background-image: -o-linear-gradient(bottom, $active-yellow 7%, $yellow-color 100%);
-    background-image: linear-gradient(bottom, $active-yellow 7%, $yellow-color 100%);
+header ul.nav {
+    overflow: hidden;
     text-align: center;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 1px #0E0E0E;
-    -webkit-box-shadow: 2px 2px 3px #888;
-    -moz-box-shadow: 2px 2px 3px #888;
-    box-shadow: 2px 2px 3px #888;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
 }
 
+header ul.nav li {
+    position: relative;
+    float: left;
+    width: 15%;
+    text-align: center;
+}
 
-/* prime */
-
-ul.primary li {
-    a {
-        display: block;
-        padding: 20px 30px;
-        border-right: 1px solid #3D3D3D;
-    }
-    &:last-child a {
-        border-right: none;
-    }
-    a:hover {
-        color: #000;
-    }
+header ul.nav li a {
+    display: block;
+    height: 10px;
+    opacity: 0;
+    font: 400 12px 'Allan', serif;
+    line-height: 10px;
+    color: rgba(255,255,255,.9);
+    text-decoration: none;
+    text-align: center;
+    cursor: default;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
     &:hover {
-        a {
-            background: $active-yellow;
-            color: #666;
-            text-shadow: none;
-            text-decoration: none;
-        }
-        >a {
-            color: #000;
-        }
+        color: #fff;
+        background-color: $active-yellow;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .decor {
-        padding: 3px;
-    }
-    .wrap {
-        width: 100%;
-        margin-top: 0px;
-    }
-    li {
-        float: none;
-    }
-    ul {
-        &.primary li:hover {
-            a {
-                background: none;
-                color: #8B8B8B;
-                text-shadow: 1px 1px #000;
-            }
-            ul {
-                display: block;
-                background: #272727;
-                color: #fff;
-            }
-        }
-    }
+/* Style for header with active class name */
+
+header.active ul.nav li a {
+    height: 60px;
+    opacity: 1;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+
+/* Style for the plus button */
+
+button.toggle-nav {
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 25px;
+    background-color: #70e40a;
+    font: 400 1.2em 'Allan', serif;
+    color: #fff;
+    border: none;
+    line-height: 20px;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+}
+
+button.toggle-nav:hover {
+    height: 25px;
+}
+
+button.toggle-nav span {
+    display: block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+}
+
+
+/* Style for the plus button when header has active classe name */
+
+header.active button.toggle-nav {
+    top: 60px;
+    background-color: #256f6f;
+}
+
+header.active button.toggle-nav span {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+}
+
+
+/* Other styles */
+
+.loud {
+    text-transform: uppercase;
 }
