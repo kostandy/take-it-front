@@ -358,13 +358,148 @@
                 }
             }
         }
+        &#programs {
+            .wrap-sec {
+                width: 95%;
+                margin: 0 auto;
+                .box {
+                    -webkit-border-radius: 5px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    -webkit-box-shadow: 0 0 5px 1px #000;
+                    box-shadow: 0 1px 5px 1px #e6e2e2;
+                    margin-top: 5px;
+                    letter-spacing: .2px;
+                    padding: 5px 15px 10px 15px;
+                    margin-bottom: 10px;
+                    .inc {
+                        margin-top: 20px;
+                        display: flex;
+                        img {
+                            height: 32px;
+                            width: 32px;
+                            margin-right: 10px;
+                        }
+                    }
+                    ul {
+                        margin-top: 20px;
+                        padding-left: 20px;
+                        li {
+                            list-style-type: disc;
+                            margin-bottom: 5px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                .table-box {
+                    .add-border{
+                        border-top: 2px solid rgba(224, 224, 224, 1);
+                    }
+                    -webkit-border-radius: 5px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    -webkit-box-shadow: 0 0 5px 1px #000;
+                    box-shadow: 0 1px 5px 1px #e6e2e2;
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+                    .head-box {
+                        border-bottom: 2px solid rgba(224, 224, 224, 1);
+                    }
+                    .info{
+                        
+                        border-right: 2px solid rgba(224, 224, 224, 1);                        
+                        padding: 10px;
+                        text-align: center;
+                        vertical-align: middle;
+                        &:first-child{
+                            margin-left: 50px;
+                        }
+                    }
+                    .footer-box {
+                        border-top: 2px solid rgba(224, 224, 224, 1);
+                        h3{
+                            margin-top: 5px;
+                        }
+                        h4 {                            
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            .kurs-wrap {
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                background-color: #fff;
+                -webkit-box-shadow: 0 0 5px 1px #000;
+                box-shadow: 0 1px 5px 1px #e6e2e2;
+                margin-top: 5px;
+                letter-spacing: .2px;
+                padding: 10px 5px 10px 5px;
+                margin-bottom: 10px;
+                height: 320px;
+                img {
+                    margin-top: 20px;
+                }
+                h4,
+                p {
+                    margin-left: 20px;
+                }
+                ul.kurs {
+                    margin-left: 40px;
+                    li {
+                        list-style-type: disc;
+                        margin-bottom: 2px;
+                        letter-spacing: .1px;
+                    }
+                }
+            }
+            .kurs-wrap-min {
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                background-color: #fff;
+                -webkit-box-shadow: 0 0 5px 1px #000;
+                box-shadow: 0 1px 5px 1px #e6e2e2;
+                margin-top: 5px;
+                letter-spacing: .2px;
+                padding: 20px 5px 10px 5px;
+                margin-bottom: 10px;
+                height: 290px;
+                .head-kurs {
+                    display: flex;
+                    margin-left: 20px;
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                    h4 {
+                        margin-left: 20px;
+                        width: 60%;
+                    }
+                }
+                p {
+                    margin-left: 20px;
+                }
+                span {
+                    margin-left: 20px;
+                    margin-bottom: 20px;
+                }
+                ul.kurs {
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    li {
+                        list-style-type: disc;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
     }
 }
 
 .form-clean {
     text-align: center;
     letter-spacing: .3px;
-    padding: 20px 5px;
+    padding: 5px 5px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     form {

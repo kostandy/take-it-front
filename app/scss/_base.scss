@@ -124,21 +124,18 @@ $active-yellow: #e85e29;
 $dark-grey-color: rgb(80, 80, 80);
 $text-grey-color: rgb(100, 100, 100);
 $light-black: #2F2E2E;
-
-.action-color{
+.action-color {
     color: $yellow-color;
 }
 
+.grey-c {
+    color: $dark-grey-color;
+}
+
+
 /*  Global */
 
-.box {
-    background: #e3e3e3;
-    height: 30px;
-    margin-bottom: 20px;
-    &:hover {
-        background-color: coral;
-    }
-}
+
 
 .tall {
     height: 100px;
