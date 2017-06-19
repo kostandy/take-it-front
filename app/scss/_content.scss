@@ -144,6 +144,7 @@
                 padding: 20px;
                 min-height: 400px;
                 margin-bottom: 20px;
+                max-height: 800px;
                 h4 {
                     text-align: center;
                 }
@@ -286,6 +287,7 @@
                     margin-top: 5px;
                     letter-spacing: .3px;
                     padding: 10px;
+                    max-height: 600px;
                     margin-left: 47px;
                     margin-bottom: 10px;
                     h4 {
@@ -295,8 +297,8 @@
                         text-align: left;
                         font-size: 14px;
                         padding-left: 20px;
-                        min-height: 160px;
-                        max-height: 260px;
+                        min-height: 180px;
+                        max-height: 360px;
                         li {
                             &.mg {
                                 background: url(../img/icons/manager.png) no-repeat left top;
@@ -392,7 +394,7 @@
                     }
                 }
                 .table-box {
-                    .add-border{
+                    .add-border {
                         border-top: 2px solid rgba(224, 224, 224, 1);
                     }
                     -webkit-border-radius: 5px;
@@ -405,22 +407,21 @@
                     .head-box {
                         border-bottom: 2px solid rgba(224, 224, 224, 1);
                     }
-                    .info{
-                        
-                        border-right: 2px solid rgba(224, 224, 224, 1);                        
+                    .info {
+                        border-right: 2px solid rgba(224, 224, 224, 1);
                         padding: 10px;
                         text-align: center;
                         vertical-align: middle;
-                        &:first-child{
+                        &:first-child {
                             margin-left: 50px;
                         }
                     }
                     .footer-box {
                         border-top: 2px solid rgba(224, 224, 224, 1);
-                        h3{
+                        h3 {
                             margin-top: 5px;
                         }
-                        h4 {                            
+                        h4 {
                             margin-bottom: 10px;
                         }
                     }
@@ -436,7 +437,7 @@
                 letter-spacing: .2px;
                 padding: 10px 5px 10px 5px;
                 margin-bottom: 10px;
-                height: 320px;
+                min-height: 320px;
                 img {
                     margin-top: 20px;
                 }
@@ -463,7 +464,7 @@
                 letter-spacing: .2px;
                 padding: 20px 5px 10px 5px;
                 margin-bottom: 10px;
-                height: 290px;
+                min-height: 290px;
                 .head-kurs {
                     display: flex;
                     margin-left: 20px;
@@ -559,6 +560,39 @@
             overflow: hidden;
             height: 120px;
             resize: none;
+        }
+    }
+}
+
+.scity {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px 1px #000;
+    box-shadow: 0 1px 5px 1px #e6e2e2;
+    margin-top: 15em;
+    letter-spacing: 1px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30em;
+    .city {
+        margin-bottom: 20px;
+        background-color: #fb652b;
+        height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        a {
+            color: #fff;
+            &:hover {
+                outline: 0;
+                text-decoration: inherit;
+            }
+        }
+        &:hover {
+            background-color: #9bcb07;
         }
     }
 }
