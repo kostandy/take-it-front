@@ -277,7 +277,7 @@
                         left: 47px;
                     }
                 }
-                .prop-wrapp{
+                .prop-wrapp {
                     -webkit-border-radius: 5px;
                     border-radius: 5px;
                     background-color: #fff;
@@ -288,14 +288,64 @@
                     padding: 10px;
                     margin-left: 47px;
                     margin-bottom: 10px;
-                    p{
-                        &:not(:last-child){
+                    h4 {
+                        text-align: center;
+                    }
+                    ul.prop-w {
+                        text-align: left;
+                        font-size: 14px;
+                        padding-left: 20px;
+                        min-height: 160px;
+                        max-height: 260px;
+                        li {
+                            &.mg {
+                                background: url(../img/icons/manager.png) no-repeat left top;
+                            }
+                            &.tc {
+                                background: url(../img/icons/up.png) no-repeat left top;
+                            }
+                            &.th {
+                                background: url(../img/icons/help.png) no-repeat left top;
+                            }
+                            &.mp {
+                                background: url(../img/icons/buy.png) no-repeat left top;
+                            }
+                            &.lo {
+                                background: url(../img/icons/disc.png) no-repeat left top;
+                            }
+                            &.ot {
+                                background: url(../img/icons/ret.png) no-repeat left top;
+                            }
+                            &.co {
+                                background: url(../img/icons/work.png) no-repeat left top;
+                            }
+                            &.cf {
+                                background: url(../img/icons/conf.png) no-repeat left top;
+                            }
+                            &.tv {
+                                background: url(../img/icons/compass.png) no-repeat left top;
+                            }
+                            &.mv {
+                                background: url(../img/icons/earth.png) no-repeat left top;
+                            }
+                            &.ex {
+                                background: url(../img/icons/cert.png) no-repeat left top;
+                            }
+                            min-height: 40px;
+                            list-style: none;
+                            padding-right: 50px;
+                            padding-left: 40px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                    p {
+                        &:not(:last-child) {
                             margin-bottom: 10px;
                         }
                     }
                 }
-                .box-box{
-                     -webkit-border-radius: 5px;
+                .box-box {
+                    -webkit-border-radius: 5px;
                     border-radius: 5px;
                     background-color: #fff;
                     -webkit-box-shadow: 0 0 5px 1px #000;
