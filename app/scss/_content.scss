@@ -436,7 +436,7 @@
                 letter-spacing: .2px;
                 padding: 10px 5px 10px 5px;
                 margin-bottom: 10px;
-                height: 320px;
+                min-height: 320px;
                 img {
                     margin-top: 20px;
                 }
@@ -463,7 +463,7 @@
                 letter-spacing: .2px;
                 padding: 20px 5px 10px 5px;
                 margin-bottom: 10px;
-                height: 290px;
+                min-height: 290px;
                 .head-kurs {
                     display: flex;
                     margin-left: 20px;
