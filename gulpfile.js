@@ -26,7 +26,7 @@ gulp.task('js', function () {
         .pipe(concat('scripts.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'))
-        .pipe(gulp.dest('../backend/django_static/js'))
+        .pipe(gulp.dest('../take-it-easy/django_static/js'))
         .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -46,7 +46,7 @@ gulp.task('scss', function () {
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(cleanCSS()) // Опционально, закомментировать при отладке
         .pipe(gulp.dest('app/css'))
-        .pipe(gulp.dest('../backend/django_static/css'))
+        .pipe(gulp.dest('../take-it-easy/django_static/css'))
         .pipe(browserSync.reload({ stream: true }));
 });
 
@@ -95,28 +95,23 @@ gulp.task('bb-html', function () {
         .pipe(gulp.dest('../backend/templates/src/blocks'))
 });
 
-gulp.task('build', ['build-html','imagemin', 'scss', 'js'], function () {
-
-    var buildFiles = gulp.src([
-        'app/*.html'
-    ])
-    .pipe(gulp.dest('../backend/templates/src'));
+gulp.task('build', ['imagemin', 'scss', 'js'], function () {
 
     var buildCss = gulp.src([
         'app/css/main.min.css'
-    ]).pipe(gulp.dest('../backend/django_static/css'));
+    ]).pipe(gulp.dest('../take-it-easy/django_static/css'));
 
     var buildJs = gulp.src([
         'app/js/scripts.min.js'
-    ]).pipe(gulp.dest('../backend/django_static/js'));
+    ]).pipe(gulp.dest('../take-it-easy/django_static/js'));
 
     var buildFonts = gulp.src([
         'app/fonts/**/*'
-    ]).pipe(gulp.dest('../backend/django_static/fonts'));
+    ]).pipe(gulp.dest('../take-it-easy/django_static/fonts'));
 
     var buildImg = gulp.src([
         'app/img/**/**/**/*'
-    ]).pipe(gulp.dest('../backend/django_static/img'));
+    ]).pipe(gulp.dest('../take-it-easy/django_static/img'));
 
 });
 
